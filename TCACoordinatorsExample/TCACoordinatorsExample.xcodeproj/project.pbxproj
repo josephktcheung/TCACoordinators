@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420992742817EEC20089B42E /* TCACoordinatorsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5248862F26F2A26200970899 /* TCACoordinatorsExampleApp.swift */; };
+		420992752817EEC20089B42E /* IdentifiedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524087E3278E3D950048C6EE /* IdentifiedCoordinator.swift */; };
+		420992762817EEC20089B42E /* IndexedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524087E1278E3D950048C6EE /* IndexedCoordinator.swift */; };
+		420992772817EEC20089B42E /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524087E2278E3D950048C6EE /* Screen.swift */; };
+		420992792817EEDD0089B42E /* TCACoordinators in Frameworks */ = {isa = PBXBuildFile; productRef = 420992782817EEDD0089B42E /* TCACoordinators */; };
 		524087E4278E3D950048C6EE /* IndexedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524087E1278E3D950048C6EE /* IndexedCoordinator.swift */; };
 		524087E5278E3D950048C6EE /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524087E2278E3D950048C6EE /* Screen.swift */; };
 		524087E6278E3D950048C6EE /* IdentifiedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524087E3278E3D950048C6EE /* IdentifiedCoordinator.swift */; };
@@ -40,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		420992652817EB660089B42E /* TCACoordinatorsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCACoordinatorsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524087E1278E3D950048C6EE /* IndexedCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexedCoordinator.swift; sourceTree = "<group>"; };
 		524087E2278E3D950048C6EE /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		524087E3278E3D950048C6EE /* IdentifiedCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifiedCoordinator.swift; sourceTree = "<group>"; };
@@ -56,6 +62,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		420992622817EB660089B42E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420992792817EEDD0089B42E /* TCACoordinators in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5248862926F2A26200970899 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +113,7 @@
 				5248862C26F2A26200970899 /* TCACoordinatorsExample.app */,
 				5248863C26F2A26500970899 /* TCACoordinatorsExampleTests.xctest */,
 				5248864626F2A26500970899 /* TCACoordinatorsExampleUITests.xctest */,
+				420992652817EB660089B42E /* TCACoordinatorsExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +174,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		420992642817EB660089B42E /* TCACoordinatorsExample (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420992712817EB670089B42E /* Build configuration list for PBXNativeTarget "TCACoordinatorsExample (macOS)" */;
+			buildPhases = (
+				420992612817EB660089B42E /* Sources */,
+				420992622817EB660089B42E /* Frameworks */,
+				420992632817EB660089B42E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TCACoordinatorsExample (macOS)";
+			packageProductDependencies = (
+				420992782817EEDD0089B42E /* TCACoordinators */,
+			);
+			productName = "TCACoordinatorsExample (macOS)";
+			productReference = 420992652817EB660089B42E /* TCACoordinatorsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5248862B26F2A26200970899 /* TCACoordinatorsExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5248865026F2A26500970899 /* Build configuration list for PBXNativeTarget "TCACoordinatorsExample" */;
@@ -222,9 +257,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					420992642817EB660089B42E = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					5248862B26F2A26200970899 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -254,11 +292,19 @@
 				5248862B26F2A26200970899 /* TCACoordinatorsExample */,
 				5248863B26F2A26500970899 /* TCACoordinatorsExampleTests */,
 				5248864526F2A26500970899 /* TCACoordinatorsExampleUITests */,
+				420992642817EB660089B42E /* TCACoordinatorsExample (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		420992632817EB660089B42E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5248862A26F2A26200970899 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +331,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		420992612817EB660089B42E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420992742817EEC20089B42E /* TCACoordinatorsExampleApp.swift in Sources */,
+				420992752817EEC20089B42E /* IdentifiedCoordinator.swift in Sources */,
+				420992762817EEC20089B42E /* IndexedCoordinator.swift in Sources */,
+				420992772817EEC20089B42E /* Screen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5248862826F2A26200970899 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +389,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		420992722817EB670089B42E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TCACoordinatorsExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 5R48U23HP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.johnpatrickmorgan.TCACoordinatorsExample;
+				PRODUCT_NAME = TCACoordinatorsExample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		420992732817EB670089B42E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TCACoordinatorsExample/Preview Content\"";
+				DEVELOPMENT_TEAM = 5R48U23HP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.johnpatrickmorgan.TCACoordinatorsExample;
+				PRODUCT_NAME = TCACoordinatorsExample;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		5248864E26F2A26500970899 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -456,7 +571,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCACoordinatorsExample/Preview Content\"";
-				DEVELOPMENT_TEAM = QJAU94J65Z;
+				DEVELOPMENT_TEAM = 5R48U23HP6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -485,7 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TCACoordinatorsExample/Preview Content\"";
-				DEVELOPMENT_TEAM = QJAU94J65Z;
+				DEVELOPMENT_TEAM = 5R48U23HP6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -603,6 +718,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		420992712817EB670089B42E /* Build configuration list for PBXNativeTarget "TCACoordinatorsExample (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420992722817EB670089B42E /* Debug */,
+				420992732817EB670089B42E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5248862726F2A26200970899 /* Build configuration list for PBXProject "TCACoordinatorsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -642,6 +766,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		420992782817EEDD0089B42E /* TCACoordinators */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCACoordinators;
+		};
 		5248865F26F2A53B00970899 /* TCACoordinators */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TCACoordinators;

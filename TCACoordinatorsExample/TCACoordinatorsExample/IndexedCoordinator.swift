@@ -38,7 +38,7 @@ enum IndexedCoordinatorAction: IndexedRouterAction {
 struct IndexedCoordinatorState: Equatable, IndexedRouterState {
 
   static let initialState = IndexedCoordinatorState(
-    routes: [.root(.home(.init()), embedInNavigationView: true)]
+    routes: [.root(.home(.init()), manualNavigation: true)]
   )
 
   var routes: [Route<ScreenState>]
